@@ -1,0 +1,37 @@
+/* Footer.css */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-content div {
+    margin: 10px;
+    flex-basis: 200px; /* Establece un ancho base para cada sección */
+  }
+  
+  .footer-content h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
