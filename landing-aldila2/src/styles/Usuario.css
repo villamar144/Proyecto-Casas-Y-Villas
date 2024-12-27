@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: blue;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .right-section {
+    flex: 1;
+    
+    padding: 20px;
+  }
+  
+  .logoVillas {
+    text-align: center;
+  }
+  
+  .user-info {
+    margin-top: 40px;
+  }
+  
+  .user-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .user-info .line {
+    height: 2px;
+    background-color: blue;
+    margin: 10px 0;
+  }
+  
+  .user-info p {
+    margin: 5px 0;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn img {
+    margin-right: 10px;
+  }
+
+  .top-buttons-section {
+    margin-bottom: 30px;
+  }
+
+  .services-section {
+    flex-grow: 1;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .buttons button {
+    background-color: #e0e0e0;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background-color: blue;
+    color: white;
+  }
+  
+  .services {
+    padding: 20px;
+    background-color: #e7eaed;  
+    border-radius: 10px;
+  }
+
+  
+  .services h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-top: auto;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 botones por fila */
+    gap: 20px; /* Espaciado entre botones */
+  }
+  
+  .service-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #e0e0e0;
+    color: black;
+    font-size: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .service-button img {
+    margin-right: 10px;
+  }
+  
+  .service-button:hover {
+    background-color: blue;
+    color: white;
+  }
+  

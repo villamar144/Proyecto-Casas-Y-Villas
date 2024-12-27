@@ -1,0 +1,177 @@
+.villa-lontananza-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header con imagen de fondo */
+.villa-header {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.villa-header h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0.4);
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+/* Secciones de información */
+.info-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #004080;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.info-card {
+  background: #f9f9f9;
+  width: 200px;
+  border-radius: 10px;
+  padding: 30px 20px;  
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-card i {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #004080;
+}
+
+.info-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 0;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+/* Sección Galería */
+.galeria-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.galeria-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #004080;
+}
+
+.galeria-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.modal-content p {
+  color: #555;
+}
+
+/* Botón para cerrar modal debajo y centrado */
+.modal-close {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #0056b3;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .info-card {
+    width: 150px;
+    padding: 15px;
+  }
+
+  .info-card i {
+    font-size: 2rem;
+  }
+
+  .info-card h3 {
+    font-size: 1rem;
+  }
+
+  .modal-content {
+    font-size: 0.9rem;
+  }
+}
+

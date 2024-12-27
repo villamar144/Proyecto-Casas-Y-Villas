@@ -1,0 +1,136 @@
+.benefits-section {
+    background-image: url('../assents/FOTOS ALDILA/0013.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefits-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.carousel-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item i {
+    /* ícono centrado y grande */
+    margin-bottom: 8px;
+}
+
+.carousel-text {
+    margin-top: 8px;
+    font-size: 1.3rem;
+    color: #004d80;
+    font-weight: bold;
+    opacity: 0.9;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.carousel-item:hover .carousel-text {
+    color: #1e90ff;
+    transform: scale(1.1);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #f5f5dc;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+}
+
+.modal-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3;
+}
+
+.modal-description {
+    margin-top: 15px;
+    color: #444;
+    font-size: 1rem;
+    white-space: pre-line;
+    text-align: justify;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .benefits-title {
+        font-size: 2rem;
+    }
+    .carousel-item {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefits-title {
+        font-size: 1.8rem;
+    }
+
+    .carousel {
+        gap: 10px;
+    }
+
+    .carousel-item {
+        width: 100px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

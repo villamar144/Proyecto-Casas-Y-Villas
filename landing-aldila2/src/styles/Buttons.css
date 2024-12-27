@@ -1,0 +1,26 @@
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 15px; /* Reducir padding para hacer el marco más pequeño */
+    background-color: #e7eaed;  
+    border-radius: 8px; /* Reducir bordes redondeados */
+    margin-top: -20px; /* Mover más arriba */
+    max-width: 600px; /* Limitar el ancho */
+    margin-left: auto;
+    margin-right: auto; /* Centrar el contenedor */
+}
+
+.top-button {
+    padding: 8px 12px; /* Reducir tamaño del botón */
+    font-size: 13px; /* Reducir tamaño de fuente */
+    color: black;
+    background-color: #e7eaed;  
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.top-button:hover {
+    background-color: #007bff;
+    color: white;
+}

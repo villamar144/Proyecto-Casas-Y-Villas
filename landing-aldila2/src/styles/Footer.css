@@ -1,0 +1,27 @@
+/* Footer.css */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px; /* Reducir padding */
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px; /* Menor espacio debajo del contenido */
+}
+
+.footer-content div {
+  margin: 0; /* Eliminar márgenes laterales innecesarios */
+}
+
+.footer-content h4 {
+  margin-bottom: 5px; /* Reducir espacio entre título y contenido */
+  font-size: 1.2rem; /* Ajustar tamaño del título */
+}
+
+.footer-bottom {
+  font-size: 0.8rem; /* Hacer más pequeño el texto */
+  margin-top: 5px; /* Reducir margen superior */
+}

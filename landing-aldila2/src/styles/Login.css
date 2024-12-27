@@ -1,0 +1,135 @@
+/* Contenedor principal dividido en dos secciones */
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sección izquierda: formulario */
+.login-container {
+  flex: 1; /* Ocupa la mitad de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4; /* Fondo sólido */
+  padding: 40px;
+  color: #333;
+}
+
+.login-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Sección derecha: carrusel */
+.carousel-container {
+  flex: 1; /* Ocupa la mitad de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #000; /* Fondo oscuro para resaltar las imágenes */
+}
+
+.carousel-login {
+  display: flex;
+  animation: slide 12s infinite linear; /* Animación para el carrusel */
+  height: 100%; /* Asegura que las imágenes ocupen el espacio vertical */
+  width: calc(100% * 6);
+}
+
+.carousel-login img {
+  width: calc(100% / 6);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+/* Animación del carrusel */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  16.6% {
+    transform: translateX(-100%);
+  }
+  33.3% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-300%);
+  }
+  66.6% {
+    transform: translateX(-400%);
+  }
+  83.3% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .login-wrapper {
+    flex-direction: column;
+  }
+
+  .carousel-container {
+    display: none; /* Oculta el carrusel en pantallas pequeñas */
+  }
+
+  .login-container {
+    flex: 1;
+    padding: 20px;
+  }
+}
